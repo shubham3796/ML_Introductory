@@ -1,0 +1,10 @@
+Tradeoffs related to step_size in epsilon_greedy method of action selection in k-armed 
+bandid problem.
+
+These are the types of tradeoffs we have to think about in reinforcement learning. 
+A larger step size moves us more quickly toward the true value, but can make our 
+estimated values oscillate around the expected value. A step size that reduces 
+over time can converge to close to the expected value, without oscillating. 
+On the other hand, such a decaying stepsize is not able to adapt to changes in 
+the environment. Nonstationarity---and the related concept of partial observability
+---is a common feature of reinforcement learning problems and when learning online.
